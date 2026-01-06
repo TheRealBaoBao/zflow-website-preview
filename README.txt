@@ -1,4 +1,4 @@
-ZFLOW.AI Static Website (from Stitch export)
+ZFLOW.AI 
 
 Open index.html.
 Pages:
