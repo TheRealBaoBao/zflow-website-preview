@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>News &amp; Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1313ec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<header class="flex items-center bg-background-light dark:bg-background-dark p-4 sticky top-0 z-10 border-b border-gray-200/10 dark:border-gray-800/80">
+<button class="text-slate-800 dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">News &amp; Blog</h1>
+<button class="text-slate-800 dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+</header>
+<!-- Chips / Filters -->
+<div class="px-4 py-3">
+<div class="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4">
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary px-4">
+<p class="text-white text-sm font-medium leading-normal">All</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-800/60 px-4">
+<p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">Press Releases</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-800/60 px-4">
+<p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">Company News</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-800/60 px-4">
+<p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">Blog</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-800/60 px-4">
+<p class="text-slate-800 dark:text-white text-sm font-medium leading-normal">Industry Insights</p>
+</button>
+</div>
+</div>
+<!-- Cards Container -->
+<main class="flex flex-col gap-4 p-4 pt-0">
+<!-- Card 1 -->
+<div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-sm bg-white dark:bg-[#1C1C27]">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Abstract blue and purple data visualization graphic" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDKKNkFvjq5vLzCiPlUWcXzRwXssskkD7Q_W8UZs0f80PIGOs9nOY5Vj7ScCtMCfhueV2FYShe2UDFdwKuA67uQxiRIYr7aHHqbvi2z000SX3EMhwPV_rJMJsXBfC_4zcviVS4fxFvEZm7A0Xnysm6p7yQh857CcoU3r-4viWYSQmICy6TsfbTmbGBuCU2f_VeihwJJXJ0oCWbhCkkx3w_3ms2gnRVADBuhsac_HA03kDowAl1WG3El3hM4trHtOG_HbIcvDR5-GfZ9");'></div>
+<div class="flex w-full grow flex-col items-stretch justify-center gap-2 p-4">
+<p class="text-primary text-sm font-medium leading-normal">Press Release</p>
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">ZFLOW.AI Unveils Breakthrough in Data Center Simulation</p>
+<p class="text-slate-600 dark:text-[#9D9DB9] text-base font-normal leading-normal line-clamp-2">A brief summary that hooks the reader and communicates the core message of the article.</p>
+<div class="flex items-center justify-between gap-3 mt-2">
+<p class="text-slate-500 dark:text-[#9D9DB9] text-sm font-normal leading-normal">Jan 22, 2024</p>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-medium leading-normal">
+<span class="truncate">Read More</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-sm bg-white dark:bg-[#1C1C27]">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Close-up of a futuristic glowing circuit board" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVxK8fy6JowAxyBTXiS8o3vKBWKnDR_vYiIJrndHVEissRwd2T-YA7HB2nKnV7XIoZjGJsYWaXjxlspsqLdf5_8jsRh1tMSsYAYKuA_fuhRlFUn8pu9Sof8gU4rF_0W5VtA7omTdhYBz4HQSFN2_lZsfxIHhCfqrxUdUL2OIhZFAuoFJsbOBlqM6TBCPCU8cbV_6b7iPfgj_pmHjSWkIBR7KbLbE4QPZ344RTsj34WSP_DqHtX3s2cu6UqxTGzzra6LN7HyotTEyl1");'></div>
+<div class="flex w-full grow flex-col items-stretch justify-center gap-2 p-4">
+<p class="text-primary text-sm font-medium leading-normal">Blog</p>
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">The Future of AI Performance Optimization</p>
+<p class="text-slate-600 dark:text-[#9D9DB9] text-base font-normal leading-normal line-clamp-2">Exploring the next frontier of artificial intelligence and how simulation is key to unlocking its potential.</p>
+<div class="flex items-center justify-between gap-3 mt-2">
+<p class="text-slate-500 dark:text-[#9D9DB9] text-sm font-normal leading-normal">Jan 15, 2024</p>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-medium leading-normal">
+<span class="truncate">Read More</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-sm bg-white dark:bg-[#1C1C27]">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Two professionals shaking hands in a modern office environment" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6i9w3BW2j12IuqXA4oqfMEz9StvT6-q0geioE7hE8c3lNn61uUYSi8fwn45bkOZqBLOaQGhDE0uJN0rHkiqdEZX4SimVzyau49XYax7SJNzOzbYAO_sSHO_g2voMItqt6kQBm7e0sqz7ttsyKT4VGBcMIBPma7ctdxlU4jgaHo6NBArFh4SYJovh445npCn1RGPtIHM-K2nsmQQeScVQ5gaSyXTdH6Z4rKf1zxRp9PaR9Lw4tuQs7S1oNIZi2nZlEafkxFQMJqw6L");'></div>
+<div class="flex w-full grow flex-col items-stretch justify-center gap-2 p-4">
+<p class="text-primary text-sm font-medium leading-normal">Company News</p>
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">ZFLOW.AI Partners with Major Cloud Provider</p>
+<p class="text-slate-600 dark:text-[#9D9DB9] text-base font-normal leading-normal line-clamp-2">This new partnership will accelerate the adoption of AI-driven data center optimization across the globe.</p>
+<div class="flex items-center justify-between gap-3 mt-2">
+<p class="text-slate-500 dark:text-[#9D9DB9] text-sm font-normal leading-normal">Jan 8, 2024</p>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary text-white text-sm font-medium leading-normal">
+<span class="truncate">Read More</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+  <script defer src="app.js"></script>
+</body></html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - ZFLOW.AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1313ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101022",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- TopAppBar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="text-slate-800 dark:text-white flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Contact Us</h2>
+<div class="flex size-12 shrink-0 items-center"></div>
+</div>
+<!-- HeadlineText -->
+<h1 class="text-slate-900 dark:text-white tracking-light text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">Let's Connect</h1>
+<!-- BodyText -->
+<p class="text-slate-600 dark:text-slate-300 text-base font-normal leading-normal pb-3 pt-1 px-4">
+            This is the best way to reach our team for investor relations, media inquiries, or potential partnerships.
+        </p>
+<!-- SectionHeader -->
+<h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-8">Send Us a Message</h2>
+<!-- Contact Form -->
+<div class="flex flex-col gap-4 px-4 w-full"><form class="contents" id="contactForm">
+<!-- Name TextField -->
+<label class="flex flex-col w-full">
+<p class="text-slate-800 dark:text-white text-base font-medium leading-normal pb-2">Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:border-primary h-14 placeholder:text-slate-400 dark:placeholder:text-slate-500 p-[15px] text-base font-normal leading-normal" placeholder="Enter your full name" required="required" value=""/>
+</label>
+<!-- Email TextField -->
+<label class="flex flex-col w-full">
+<p class="text-slate-800 dark:text-white text-base font-medium leading-normal pb-2">Email</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:border-primary h-14 placeholder:text-slate-400 dark:placeholder:text-slate-500 p-[15px] text-base font-normal leading-normal" placeholder="you@company.com" required="required" type="email" value=""/>
+</label>
+<!-- Company TextField -->
+<label class="flex flex-col w-full">
+<p class="text-slate-800 dark:text-white text-base font-medium leading-normal pb-2">Company (Optional)</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:border-primary h-14 placeholder:text-slate-400 dark:placeholder:text-slate-500 p-[15px] text-base font-normal leading-normal" placeholder="Your company name" required="required" value=""/>
+</label>
+<!-- Inquiry Type Dropdown -->
+<label class="flex flex-col w-full">
+<p class="text-slate-800 dark:text-white text-base font-medium leading-normal pb-2">Inquiry Type</p>
+<div class="relative">
+<select class="form-select appearance-none flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:border-primary h-14 placeholder:text-slate-400 dark:placeholder:text-slate-500 p-[15px] text-base font-normal leading-normal" required="required">
+<option>Investor Relations</option>
+<option>Media Inquiry</option>
+<option>Partnership</option>
+<option>General Inquiry</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</label>
+<!-- Message TextArea -->
+<label class="flex flex-col w-full">
+<p class="text-slate-800 dark:text-white text-base font-medium leading-normal pb-2">Message</p>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:border-primary h-32 placeholder:text-slate-400 dark:placeholder:text-slate-500 p-[15px] text-base font-normal leading-normal" placeholder="Your detailed message..." required="required"></textarea>
+</label>
+<!-- Submit Button -->
+<button class="flex items-center justify-center font-bold text-white rounded-lg bg-primary h-14 w-full text-base mt-4" type="submit">
+                Submit Inquiry
+            </button>
+</form></div>
+<!-- SectionHeader for other contact methods -->
+<h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-12">Other Ways to Reach Us</h2>
+<!-- Information Card/Section -->
+<div class="px-4 py-2 w-full">
+<div class="bg-white dark:bg-slate-900 rounded-xl p-4 flex flex-col gap-4 divide-y divide-slate-200 dark:divide-slate-800">
+<a class="flex items-center gap-4 pt-2" href="mailto:investors@zflow.ai">
+<div class="bg-primary/10 dark:bg-primary/20 p-2 rounded-full">
+<span class="material-symbols-outlined text-primary">trending_up</span>
+</div>
+<div>
+<p class="text-slate-800 dark:text-white font-medium">Investor Relations</p>
+<p class="text-primary text-sm">investors@zflow.ai</p>
+</div>
+</a>
+<a class="flex items-center gap-4 pt-4" href="mailto:general@zflow.ai">
+<div class="bg-primary/10 dark:bg-primary/20 p-2 rounded-full">
+<span class="material-symbols-outlined text-primary">email</span>
+</div>
+<div>
+<p class="text-slate-800 dark:text-white font-medium">General Inquiries</p>
+<p class="text-primary text-sm">general@zflow.ai</p>
+</div>
+</a>
+<a class="flex items-center gap-4 pt-4" href="tel:+1-555-123-4567">
+<div class="bg-primary/10 dark:bg-primary/20 p-2 rounded-full">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<p class="text-slate-800 dark:text-white font-medium">Main Office</p>
+<p class="text-primary text-sm">+1 (555) 123-4567</p>
+</div>
+</a>
+<div class="flex items-start gap-4 pt-4">
+<div class="bg-primary/10 dark:bg-primary/20 p-2 rounded-full mt-1">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<p class="text-slate-800 dark:text-white font-medium">Headquarters</p>
+<p class="text-slate-600 dark:text-slate-300 text-sm">123 Tech Avenue, Silicon Valley, CA 94000</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Social Media Section -->
+<h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-12">Follow Our Journey</h2>
+<div class="px-4 py-2 flex gap-4">
+<a class="flex items-center justify-center size-14 bg-white dark:bg-slate-900 rounded-xl" href="#">
+<img class="h-6 w-6" data-alt="LinkedIn Icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIBOaDY8TkAMZeRSVOhR2qgEdtoekDambAttyAhDPJ5eHCha-IDNdZy1KYFrwc6eM20KGyR2HKyIFiv5Ujv_o0XWRbqtQdMkcIxKJndd4TKGUvabrJQ58LXlCYBrsU-BtcAGVlgvfeBr19QgVUGB0u6gHXdZx5bwjjl6G1B89ICX8UuEsQGoHcIPEs6OjrFH9VpiL88fBL0smv2u9uGAfgGn29hOibVnn_eL7lc-byMUNGCP-On0ecXRUwZTkmzxDesXBHr_DxEyi8"/>
+</a>
+<a class="flex items-center justify-center size-14 bg-white dark:bg-slate-900 rounded-xl" href="#">
+<img class="h-6 w-6" data-alt="X/Twitter Icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjbn2P60QmFkGvZTtdzbR8vebd9OHfcFGsyUSWAH1-DdR24fDfBCIid5y41QSmaBsR3m5K5hX7vs6y5iOGjWgMDm3jKnymTkQG5TBIrz16Ld3wHaSLqiXta05sRYbv03KiUGLQRVLvGrceN8VpuNlryzijlZhGjXurojiMJVAw6BwfsVBDJWe-s2dJVoiVAFfPmYujn3d_iG10VFnrhWl2bU-vJcc7HD-dzTrAfzJK71VN3lYEcpMeKehKnhPqUhfqKO3o8ibLmwTW"/>
+</a>
+</div>
+<!-- Footer -->
+<footer class="text-center px-4 py-8 mt-8 border-t border-slate-200 dark:border-slate-800">
+<p class="text-slate-500 dark:text-slate-400 text-sm">© 2024 ZFLOW.AI. All Rights Reserved.</p>
+<a class="text-primary text-sm mt-2 inline-block" href="privacy.html">Privacy Policy</a>
+</footer>
+</div>
+  <script defer src="app.js"></script>
+</body></html>

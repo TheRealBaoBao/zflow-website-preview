@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>ZFLOW.AI - Request a Demo</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: { display: ["Space Grotesk", "ui-sans-serif", "system-ui"] },
+          colors: {
+            background: { dark: "#0B1020", light: "#0B1020" },
+            surface: { dark: "#111A2E" },
+            primary: "#36E3A6",
+            "text-secondary-dark": "#A1A1AA",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { min-height: max(884px, 100dvh); }
+    .scrollbar-hide::-webkit-scrollbar { display:none; }
+    .scrollbar-hide { -ms-overflow-style:none; scrollbar-width:none; }
+  </style>
+</head>
+<body class="bg-background-dark font-display text-white">
+  <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+    <header class="flex items-center justify-between p-4 sticky top-0 z-10 bg-background-dark/90 backdrop-blur">
+      <button class="flex size-12 items-center justify-center" aria-label="Back">
+        <span class="material-symbols-outlined text-3xl">arrow_back_ios_new</span>
+      </button>
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-2xl text-primary">chat_bubble</span>
+        <span class="text-lg font-bold tracking-[-0.015em]">Request a Demo</span>
+      </div>
+      <div class="flex size-12 items-center justify-center">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </div>
+    </header>
+
+    <main class="flex-1 px-4 pb-8">
+      <h1 class="text-4xl font-bold tracking-[-0.02em] leading-tight mt-4">See ZFLOW.AI in Action</h1>
+      <p class="text-text-secondary-dark text-lg leading-normal mt-3">
+        Schedule a personalized demo to see how our simulation platform can optimize your AI data center’s performance,
+        reduce costs, and accelerate your time-to-market.
+      </p>
+
+      <div class="mt-6 space-y-4">
+        <div class="flex gap-3">
+          <span class="material-symbols-outlined text-primary text-2xl">check_circle</span>
+          <p class="text-lg text-text-secondary-dark leading-normal">
+            A live walkthrough of our full product suite tailored to your use case.
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <span class="material-symbols-outlined text-primary text-2xl">check_circle</span>
+          <p class="text-lg text-text-secondary-dark leading-normal">
+            Discuss your specific challenges with our data center optimization experts.
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <span class="material-symbols-outlined text-primary text-2xl">check_circle</span>
+          <p class="text-lg text-text-secondary-dark leading-normal">
+            Get answers to all your technical and business questions.
+          </p>
+        </div>
+      </div>
+
+      <section class="mt-8 rounded-2xl bg-surface-dark p-5">
+        <h2 class="text-2xl font-bold">Tell us about yourself</h2>
+
+        <form id="demoForm" class="mt-5 space-y-5">
+          <div>
+            <label class="block text-sm font-semibold text-white/90">Full Name</label>
+            <input required type="text" name="name" placeholder="Enter your full name"
+              class="mt-2 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-4 text-lg placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50"/>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-white/90">Work Email</label>
+            <input required type="email" name="email" placeholder="you@company.com"
+              class="mt-2 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-4 text-lg placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50"/>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-white/90">Company</label>
+            <input required type="text" name="company" placeholder="Your company name"
+              class="mt-2 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-4 text-lg placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50"/>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold text-white/90">Message (Optional)</label>
+            <textarea name="message" rows="5" placeholder="Tell us about your project or questions..."
+              class="mt-2 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-4 text-lg placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-primary/50"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full rounded-2xl bg-primary text-black font-bold text-xl py-5 flex items-center justify-center gap-2 hover:opacity-95 transition">
+            Submit Request
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="px-6 pb-8 text-center text-sm text-white/40">
+      <div class="flex justify-center gap-6 mb-3">
+        <a class="hover:text-primary" href="simulator.html">Technology</a>
+        <a class="hover:text-primary" href="#investors">Investors</a>
+        <a class="hover:text-primary" href="contact.html">Contact</a>
+      </div>
+      <div>© 2024 ZFLOW.AI. All Rights Reserved.</div>
+    </footer>
+  </div>
+
+  <script defer src="app.js"></script>
+</body>
+</html>
